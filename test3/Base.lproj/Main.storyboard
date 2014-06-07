@@ -115,7 +115,7 @@
                     <navigationItem key="navigationItem" id="t2N-8d-Cv0">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="gHo-Ua-Hns">
                             <connections>
-                                <segue destination="gDT-QU-bbH" kind="modal" identifier="EditHumanView" id="b8Q-nG-uMy"/>
+                                <segue destination="Wq8-OC-Y0u" kind="push" identifier="EditHumanView" id="E13-lK-HQ1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -194,25 +194,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHk-kE-LxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="62"/>
-        </scene>
-        <!--Navigation Controller - 編集-->
-        <scene sceneID="Dy7-un-GfC">
-            <objects>
-                <navigationController title="編集" automaticallyAdjustsScrollViewInsets="NO" id="gDT-QU-bbH" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GaN-TY-e3b">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Wq8-OC-Y0u" kind="relationship" relationship="rootViewController" id="yxW-DT-oBF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgg-oO-Ln2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1368" y="62"/>
+            <point key="canvasLocation" x="1332" y="68"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

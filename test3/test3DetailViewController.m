@@ -2,6 +2,7 @@
 //  test3
 
 #import "test3DetailViewController.h"
+#import "EditViewControllerTableViewController.h"
 #import "Human.h"
 
 @interface test3DetailViewController ()
@@ -34,10 +35,20 @@
     [super viewDidLoad];
     [self configureView];
 }
-/*
-- (void)didReceiveMemoryWarning
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
+    NSLog(@"-----------");
+    if ([[segue identifier] isEqualToString:@"EditHumanView"]) {
+        NSLog(@"segue -> EditHumanView");
+        EditViewControllerTableViewController *editViewController = [segue destinationViewController];
+        editViewController.human = self.human;
+/*
+        test3DetailViewController *detaViewController = [segue destinationViewController];
+        detaViewController.human = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+*/        
+    }
+    NSLog(@"-----------");
 }
-*/
+
 @end

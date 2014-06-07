@@ -2,6 +2,7 @@
 //  test3
 
 #import "EditViewControllerTableViewController.h"
+#import "Human.h"
 
 @interface EditViewControllerTableViewController ()
 @end
@@ -22,9 +23,29 @@
     [self configureView];
 }
 
+- (void)setHuman:(Human *)newHuman {
+    if(_human != newHuman) {
+        _human = newHuman;
+        [self configureView];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+
+
+- (void)configureView
+{
+    NSLog(@"-----------");
+    NSLog(@"configureView");
+    NSLog(@"-----------");
+    Human *theHuman = self.human;
+    
+    self.EditNameInput.text = theHuman.name;
+    //self.EditNameInput.text = @"編集の名前";
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -32,15 +53,5 @@
         [textField resignFirstResponder];
     }
     return YES;
-}
-
-- (void)configureView
-{
-    NSLog(@"-----------");
-    NSLog(@"configureView");
-    NSLog(@"-----------");
-    
-    self.EditNameInput.text = @"編集の名前";
-
 }
 @end
