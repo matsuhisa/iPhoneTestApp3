@@ -35,8 +35,6 @@
     [super didReceiveMemoryWarning];
 }
 
-
-
 - (void)configureView
 {
     NSLog(@"-----------");
@@ -54,4 +52,17 @@
     }
     return YES;
 }
+
+// キャンセル
+- (IBAction)EditCancel:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+// 保存
+- (IBAction)EditDone:(UIBarButtonItem *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end

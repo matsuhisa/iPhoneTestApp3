@@ -185,8 +185,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="編集" id="vIY-sO-1Jm">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="l4V-fw-1u7"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lqv-gf-C9Y"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="l4V-fw-1u7">
+                            <connections>
+                                <action selector="EditCancel:" destination="Wq8-OC-Y0u" id="ALl-00-zL0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lqv-gf-C9Y">
+                            <connections>
+                                <action selector="EditDone:" destination="Wq8-OC-Y0u" id="liU-S9-XGa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="EditNameInput" destination="O5o-Fb-QdP" id="hPS-Vu-4je"/>

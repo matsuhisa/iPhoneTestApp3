@@ -6,29 +6,16 @@
 #import "HumanDataController.h"
 #import "Human.h"
 
-/*
-@interface test3MasterViewController() {
-}
-@end
-*/
-
 @implementation test3MasterViewController
 
 - (void)awakeFromNib
 {
-    NSLog(@"-----------");
-    NSLog(@"Master awakeFromNib");
-    NSLog(@"-----------");
-
     [super awakeFromNib];
     self.dataController = [[HumanDataController alloc] init];
 }
 
 - (void)viewDidLoad
 {
-    NSLog(@"-----------");
-    NSLog(@"Master viewDidLoad");
-    NSLog(@"-----------");
     [super viewDidLoad];
 }
 
@@ -48,8 +35,6 @@
     return NO;
 }
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.dataController countOfList];
@@ -61,7 +46,7 @@
 
     // セルを生成
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    Human *humanAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
+    Human *humanAtIndex   = [self.dataController objectInListAtIndex:indexPath.row];
 
     // セルについての処理
     [[cell textLabel] setText:humanAtIndex.name];

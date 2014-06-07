@@ -16,7 +16,6 @@
 - (void)setHuman:(Human *)newHuman {
     if(_human != newHuman) {
         _human = newHuman;
-        
         [self configureView];
     }
 }
@@ -43,10 +42,7 @@
         NSLog(@"segue -> EditHumanView");
         EditViewControllerTableViewController *editViewController = [segue destinationViewController];
         editViewController.human = self.human;
-/*
-        test3DetailViewController *detaViewController = [segue destinationViewController];
-        detaViewController.human = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
-*/        
+       
     }
     NSLog(@"-----------");
 }

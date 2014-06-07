@@ -9,7 +9,9 @@
 <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *EditNameInput;
-
 @property (strong, nonatomic) Human *human;
+
+- (IBAction)EditCancel:(UIBarButtonItem *)sender;
+- (IBAction)EditDone:(UIBarButtonItem *)sender;
 
 @end
