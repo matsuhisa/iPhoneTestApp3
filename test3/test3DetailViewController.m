@@ -1,12 +1,8 @@
-//
 //  test3DetailViewController.m
 //  test3
-//
-//  Created by 松久浩伸 on 2014/06/04.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
-//
 
 #import "test3DetailViewController.h"
+#import "Human.h"
 
 @interface test3DetailViewController ()
 - (void)configureView;
@@ -16,36 +12,32 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+- (void)setHuman:(Human *)newHuman {
+    if(_human != newHuman) {
+        _human = newHuman;
         
-        // Update the view.
         [self configureView];
     }
 }
 
+// 描画
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    Human *theHuman = self.human;
+    if(theHuman) {
+        self.humanNameLabel.text = theHuman.name;
     }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
-
+/*
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
+*/
 @end

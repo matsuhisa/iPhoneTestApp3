@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B99F44C7193F6979007A9718 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F44C6193F6979007A9718 /* Human.m */; };
+		B99F44CA193F6ACB007A9718 /* HumanDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F44C9193F6ACB007A9718 /* HumanDataController.m */; };
 		B9E926AA193F5E9E002C2D7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E926A9193F5E9E002C2D7A /* Foundation.framework */; };
 		B9E926AC193F5E9E002C2D7A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E926AB193F5E9E002C2D7A /* CoreGraphics.framework */; };
 		B9E926AE193F5E9E002C2D7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E926AD193F5E9E002C2D7A /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B99F44C5193F6979007A9718 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B99F44C6193F6979007A9718 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B99F44C8193F6ACB007A9718 /* HumanDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanDataController.h; sourceTree = "<group>"; };
+		B99F44C9193F6ACB007A9718 /* HumanDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanDataController.m; sourceTree = "<group>"; };
 		B9E926A6193F5E9E002C2D7A /* test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E926A9193F5E9E002C2D7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9E926AB193F5E9E002C2D7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +128,10 @@
 				B9E926BF193F5E9E002C2D7A /* test3MasterViewController.m */,
 				B9E926C1193F5E9E002C2D7A /* test3DetailViewController.h */,
 				B9E926C2193F5E9E002C2D7A /* test3DetailViewController.m */,
+				B99F44C5193F6979007A9718 /* Human.h */,
+				B99F44C6193F6979007A9718 /* Human.m */,
+				B99F44C8193F6ACB007A9718 /* HumanDataController.h */,
+				B99F44C9193F6ACB007A9718 /* HumanDataController.m */,
 				B9E926C4193F5E9E002C2D7A /* Images.xcassets */,
 				B9E926B0193F5E9E002C2D7A /* Supporting Files */,
 			);
@@ -257,8 +267,10 @@
 			files = (
 				B9E926BA193F5E9E002C2D7A /* test3AppDelegate.m in Sources */,
 				B9E926C0193F5E9E002C2D7A /* test3MasterViewController.m in Sources */,
+				B99F44C7193F6979007A9718 /* Human.m in Sources */,
 				B9E926B6193F5E9E002C2D7A /* main.m in Sources */,
 				B9E926C3193F5E9E002C2D7A /* test3DetailViewController.m in Sources */,
+				B99F44CA193F6ACB007A9718 /* HumanDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +475,7 @@
 				B9E926DD193F5E9E002C2D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9E926DE193F5E9E002C2D7A /* Build configuration list for PBXNativeTarget "test3Tests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +484,7 @@
 				B9E926E0193F5E9E002C2D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
